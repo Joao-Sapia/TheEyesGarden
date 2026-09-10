@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@600;700&family=Montserrat:wght@400;500;600&display=swap');
+
+.nav {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    padding: 0 38px;
+    box-sizing: border-box;
+    background-color: #f7f5e9;
+    border-bottom: 1px solid #e6e3d5;
+    position: relative;
+    z-index: 200;
+}
+.titulo {
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.titulo h1 {
+    margin: 0;
+    color: #075b3b;
+    font-family: 'Abhaya Libre', Georgia, serif;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1;
+}
+.titulo p {
+    margin: 6px 0 0;
+    color: #527568;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 500;
+}
+
+.barraPesquisa {
+    flex: 1;
+    max-width: 700px;
+    height: 52px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 30px;
+    border: 1px solid #e1e2d8;
+    box-shadow: 0 2px 8px rgba(50, 80, 55, 0.05);
+}
+.barraPesquisa span {
+    color: #087744;
+    font-family: Arial, sans-serif;
+    font-size: 31px;
+    line-height: 1;
+    margin-right: 10px;
+    transform: rotate(-20deg);
+}
+.barraPesquisa input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: #315f50;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 14px;
+}
+.barraPesquisa input::placeholder {
+    color: #79958b;
+}
+.interacoes {
+    width: 245px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 30px;
+    margin-left: 25px;
+}
+.interacao {
+    min-width: 85px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.interacao:hover {
+    transform: translateY(-2px);
+}
+.icone {
+    color: #087744;
+    font-size: 29px;
+    line-height: 1;
+    margin-bottom: 5px;
+}
+.interacao p {
+    margin: 0;
+    color: #075b3b;
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+}
+@media (max-width: 900px) {
+    .nav {
+        padding: 0 20px;
+    }
+    .titulo {
+        width: 220px;
+    }
+    .titulo h1 {
+        font-size: 23px;
+    }
+    .barraPesquisa {
+        margin: 0 15px;
+    }
+    .interacoes {
+        width: auto;
+        gap: 15px;
+        margin-left: 10px;
+    }
+}
+@media (max-width: 700px) {
+    .nav {
+        height: 80px;
+        padding: 0 15px;
+    }
+    .titulo {
+        width: auto;
+    }
+    .titulo h1 {
+        font-size: 19px;
+    }
+    .titulo p {
+        display: none;
+    }
+    .barraPesquisa {
+        height: 40px;
+        margin: 0 12px;
+    }
+    .barraPesquisa span {
+        font-size: 24px;
+    }
+    .barraPesquisa input {
+        font-size: 11px;
+    }
+    .interacoes {
+        gap: 5px;
+    }
+    .interacao {
+        min-width: 55px;
+    }
+    .icone {
+        font-size: 22px;
+    }
+    .interacao p {
+        font-size: 9px;
+    }
+}

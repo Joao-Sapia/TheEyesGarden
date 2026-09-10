@@ -39,6 +39,16 @@ public class ProdutoController {
         }
 
         String sql = "INSERT INTO produto(nome, categoria, descricao, valor, quantidade) VALUES (?,?,?,?,?)";
+
+        jdbcTemplate.update(
+                sql,
+                produtos.getNome(),
+                produtos.getCategoria().name(),
+                produtos.getDescricao(),
+                produtos.getValor(),
+                produtos.getQuantidade()
+        );
+
         return ResponseEntity.status(201).build();
 
         

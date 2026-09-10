@@ -1,0 +1,116 @@
+.telaLista {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('../assets/Plano\ de\ Fundo\ Florido.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+}
+.conteudo {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 45px 35px 60px;
+    box-sizing: border-box;
+}
+.cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+.cabecalho h1 {
+    margin: 0;
+    color: #075c3d;
+    font-size: 32px;
+    font-family: Georgia, serif;
+}
+.cabecalho span {
+    font-size: 30px;
+}
+.listaProdutos {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.boxProduto {
+    width: 100%;
+    min-height: 95px;
+    padding: 15px 20px;
+
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #ffffff;
+
+    border: 1px solid #e4e3da;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: 0.2s;
+}
+.boxProduto:hover {
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+}
+.informacoes {
+    flex: 1;
+    min-width: 0;
+    padding-right: 25px;
+}
+.informacoes h3 {
+    margin: 0 0 6px;
+    color: #075c3d;
+
+    font-size: 17px;
+    font-family: Georgia, serif;
+    font-weight: bold;
+}
+.descricao {
+    max-width: 650px;
+}
+.descricao span {
+    color: #607d75;
+    font-size: 14px;
+    line-height: 1.4;
+}
+.categoria {
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    margin-right: 25px;
+}
+.categoria span {
+    padding: 5px 12px;
+    border-radius: 20px;
+    background-color: #e8f2e5;
+
+    color: #16704d;
+    font-size: 12px;
+    white-space: nowrap;
+}
+.estoque {
+    width: 130px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    border-left: 1px solid #e1e1da;
+}
+.estoque span {
+    color: #176a4b;
+    font-size: 13px;
+    white-space: nowrap;
+}
+.valor {
+    width: 100px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+.valor span {
+    color: #075c3d;
+
+    font-size: 17px;
+    font-weight: bold;
+    white-space: nowrap;
+}

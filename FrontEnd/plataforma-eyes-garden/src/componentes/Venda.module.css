@@ -1,0 +1,128 @@
+.telaVenda {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(241, 239, 218, 0.35), rgba(241, 239, 218, 0.45)), url('../assets/Plano\ de\ Fundo\ Verde.png') center/cover no-repeat;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+.conteudo {
+    min-height: calc(100vh - 120px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 70px 20px 130px;
+    box-sizing: border-box;
+}
+.conteudo::before {
+    content: "";
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: -180px;
+    bottom: -170px;
+    background: radial-gradient(ellipse at center, rgba(42, 105, 67, 0.45) 0%, rgba(77, 130, 84, 0.28) 35%, transparent 70%);
+    border-radius: 50%;
+    transform: rotate(-20deg);
+}
+.conteudo::after {
+    content: "";
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    right: -160px;
+    top: -80px;
+    background: radial-gradient(ellipse at center, rgba(62, 116, 67, 0.38) 0%, rgba(119, 155, 94, 0.25) 40%, transparent 70%);
+    border-radius: 50%;
+    transform: rotate(25deg);
+}
+.apresentacao {
+    width: 520px;
+    min-height: 320px;
+    padding: 55px 65px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    background: rgba(250, 249, 235, 0.88);
+    border-radius: 28px;
+    box-shadow: 0 15px 40px rgba(45, 76, 53, 0.18);
+    backdrop-filter: blur(8px);
+}
+.apresentacao h1 {
+    margin: 0;
+    color: #075b3b;
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+.apresentacao p {
+    margin: 18px 0 35px;
+    color: #557568;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    line-height: 1.5;
+}
+.botoes {
+    display: flex;
+    gap: 18px;
+    justify-content: center;
+}
+.cadastrar,
+.verItens {
+    display: flex;
+}
+.cadastrar button,
+.verItens button {
+    border: none;
+    padding: 15px 27px;
+    border-radius: 25px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+.cadastrar button {
+    background-color: #087744;
+    color: white;
+    box-shadow: 0 5px 15px rgba(8, 119, 68, 0.25);
+}
+.verItens button {
+    background-color: white;
+    color: #087744;
+    border: 1px solid #c8d8c2;
+}
+.cadastrar button:hover,
+.verItens button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 18px rgba(45, 76, 53, 0.18);
+}
+@media (max-width: 700px) {
+    .conteudo {
+        padding: 50px 20px 130px;
+    }
+    .apresentacao {
+        width: 100%;
+        padding: 45px 25px;
+    }
+    .apresentacao h1 {
+        font-size: 32px;
+    }
+    .apresentacao p {
+        font-size: 15px;
+    }
+    .botoes {
+        flex-direction: column;
+        width: 100%;
+    }
+    .cadastrar button,
+    .verItens button {
+        width: 100%;
+    }
+}
